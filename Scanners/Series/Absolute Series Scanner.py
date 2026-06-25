@@ -160,7 +160,7 @@ WHACK_PRE_CLEAN_RAW = [ "x264-FMD Release", "EniaHD (HEVC, WEB-DL 2160p)", "x264
                         "H.264_AAC", "Hi10P", "Hi10", "x264", "BD 10-bit", "DXVA", "H.264", "(BD, 720p, FLAC)", "Blu-Ray", "Blu-ray",  "SD TV", "SD DVD", "HD TV",  "-dvdrip", "dvd-jap", "(DVD)", "BDRip",
                         "FLAC", "Dual Audio", "EAC3", "AC3", "AC3.5.1", "AC3-5.1", "AAC2.0", "AAC.2.0", "AAC2_0", "AAC", "1080p", 'DD2.1', 'DD5.1', "5.1",'divx5.1', "DD5_1", "TV-1", "TV-2", "TV-3", "TV-4", "TV-5",
                         "(Exiled_Destiny)", "720p", "480p", "_BD", ".XVID", "(xvid)", "dub.sub_ja+.ru+", "dub.sub_en.ja", "dub_en", "UNCENSORED", "THD", "H264", "2xDVO",
-                        'ExKinoRay', "NTb", "(S01-02)", "-Cd 1", "-Cd 2", "Vol 1", "Vol 2", "Vol 3", "Vol 4", "Vol 5", "Vol.1", "Vol.2", "Vol.3", "Vol.4", "Vol.5", "NTSC",
+                        'ExKinoRay', "NTb", "(S01-02)", "-Cd 1", "-Cd 2", "Vol 1", "Vol 2", "Vol 3", "Vol 4", "Vol 5", "Vol.1", "Vol.2", "Vol.3", "Vol.4", "Vol.5", "Vol.01", "Vol.02", "Vol.03", "Vol.04", "Vol.05", "NTSC",
                         "%28", "%29", " (1)", "(Clean)", "(DVDRemux)", "vostfr", "HEVC", "(Bonus inclus)", "(BD 1920x1080)", "10Bits-WKN", "WKN", "(Complet)", "Despair-Paradise", "Shanks@", "[720p]", "10Bits",
                         "(TV)", "[DragonMax]", "INTEGRALE", "MKV", "(Remastered HQ)", "MULTI", "DragonMax", "Zone-Telechargement.Ws", "Zone-Telechargement", "AniLibria.TV", "HDTV-RIP",
                         "mawen1250", "Creditless", "YUV420P10", "AI-Raws", "philosophy-raws", "VCB-S", "10-bit", "DD2.0", "The0x539"
