@@ -1162,7 +1162,7 @@ def Scan(path, files, media, dirs, language=None, root=None, **kwargs): #get cal
         if WS_VERSION.search(ep):                                                                                  ep=ep[:-2].rstrip('-.')                            #
         if not ep:                                                                                                 continue                                           #
         skip_word = False
-        for prefix in ["ep", "e", "act", "s"]:                                                                                                                        #
+        for prefix in ["ep", "e", "act"]:                                                                                                                        #
           if ep.startswith(prefix) and len(ep)>len(prefix) and WS_DIGIT.search(ep[len(prefix):]):
             if prefix == "s" and words.index(word) + 1 < len(words) and '-' in words[words.index(word) + 1:]:      skip_word = True; continue                         # don't take special if it is followed by the separator
             #Log.info(u'misc_count[word]: {}, filename.count(word)>=2: {}'.format(misc_count[word] if word in misc_count else 0, filename.count(word)))
@@ -1178,7 +1178,7 @@ def Scan(path, files, media, dirs, language=None, root=None, **kwargs): #get cal
           if WS_SPECIALS.search(ep):                                                                               is_special = True; break                           # Specials go to regex # 's' is ignored as dealt with later in prefix processing # '(t|o)' require a number to make sure a word is not accidently matched
           if ''.join(letter for letter in ep if letter.isdigit())=="":                                             continue                                           # Continue if there are no numbers in the string
           if path and ep in misc_count and misc_count[ep]>=2:                                                      continue                                           # Continue if not root folder and string found in in any other filename
-          if ep in clean_string(folder_show, True).split() and clean_string(filename, True).split().count(ep)!=2:  continue                                           # Continue if string is in the folder name & string is not in the filename only twice
+          if ep in clean_string(folder_show, True).lower().split() and clean_string(filename, True).split().count(ep)!=2:  continue                                           # Continue if string is in the folder name & string is not in the filename only twice
           #if   ep.isdigit() and len(ep)==4 and (int(ep)< 1900 or folder_season and int(ep[0:2])==folder_season):   season, ep = int(ep[0:2]), ep[2:4]                 # 1206 could be season 12 episode 06  #Get assigned from left ot right
           #elif ep.isdigit() and len(ep)==4:  filename = clean_string( " ".join(words).replace(ep, "(%s)" % ep));   continue                                           # take everything after supposed episode number
           if   ep.isdigit() and len(ep)==4 and int(ep)>= 1930: filename = clean_string( " ".join(words).replace(ep, "(%s)" % ep));   continue                                           # take everything after supposed episode number
